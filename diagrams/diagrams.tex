@@ -188,4 +188,34 @@
     \end{minipage}
 \end{figure}
 
+\begin{figure}[h!]
+\centering
+\feynmandiagram [scale=1.7][layered layout, horizontal=a to b] {
+    a [particle=\(n(d)\)] -- [fermion] b [dot,black] -- [fermion] f1 [particle=\(p(u)\)],
+    b -- [boson, edge label'=\(W^{-}\)] c [dot,black],
+    c -- [anti fermion] f2 [particle=\(\overline \nu_{e}\)],
+    c -- [fermion] f3 [particle=\(e^{-}\)],
+};
+\caption*{Feynman representation of the $\beta$-decay of the neutron: $n \rightarrow p + e^{-} + \bar{\nu}_{e}$.}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\begin{minipage}{0.4\textwidth}
+\feynmandiagram [scale=2.15][inline=(d.base), vertical=b to d] {
+    a [particle=\(f\)] -- [fermion] b [dot,black] -- [fermion] c [particle=\(f\)],
+    b -- [boson] d [particle=\(Z\)],
+    };
+\subcaption{NC interaction vertex.}
+\end{minipage}
+\hspace{15mm}
+\begin{minipage}{0.4\textwidth}
+\feynmandiagram [scale=2.15][inline=(d.base), vertical=b to d] {
+    a [particle=\(l^{-}\)] -- [fermion] b [dot,black] -- [fermion] c [particle=\(\nu_{l}\)],
+    b -- [boson] d [particle=\(W\)],
+    };
+\subcaption{CC interaction vertex.}
+\end{minipage} 
+\end{figure}
+
 \end{document}
